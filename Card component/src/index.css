@@ -1,0 +1,29 @@
+.main-div{
+  margin:20px;
+  padding: 10px;
+  background-color: hsl(0, 0%, 96%);
+  text-align: center;
+  border: 2px solid gray;
+  border-radius: 10px;
+  max-width: 50%;
+  display: inline-block;
+}
+.main-div img{
+  border-radius: 30%;
+  opacity: 0.9;
+  max-width: 100%;
+}
+.main-div h2 {
+  font-weight: bold;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 28px;
+  margin: 5px 0;
+  color: rgba(217, 35, 35, 0.789);
+}
+.main-div p{
+   font-weight: bold;
+  font-family:'Times New Roman', Times, serif;
+  font-size: 18px;
+  margin: 10px 0;
+  color: hsla(0, 0%, 0%, 0.592);
+}
