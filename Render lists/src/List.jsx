@@ -19,16 +19,33 @@
 // }
 
 // Now we wil create a Dynamic List Componet 
-function List (props){
-    let ListItems = props.items
+
+// First step is npm install prop-types, Then -> 
+
+import PropTypes from "prop-types";
+// Here we have to use the default paramters as you know in JS and the defaultProps In react 18 Is not working
+function List ({items =  [],category = "Category" }){
+    let ListItems = items
     let displayList = ListItems.map(item=> <li key={item.id}>{item.name}: {item.cal} caleries</li>)
     return(
         <>
-        <h1 className="Heading">{props.catecory}</h1>
+        <h1 className="Heading">{category}</h1>
         <ol className="List">
         {displayList}
         </ol>
         </>
     )
 }
+List.propTypes = {
+  items: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      name: PropTypes.string.isRequired,
+      cal: PropTypes.number.isRequired,
+    })
+  ),
+  category: PropTypes.string,
+};
+
+
 export default List
