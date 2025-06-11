@@ -16,8 +16,9 @@ function App() {
 
  return(
   <>
-  <List items = {arrOfObjFruite} catecory = "Fruites" />
-  <List items = {arrOfObjVetables} catecory = "Vegtables " />
+ {arrOfObjFruite.length > 0 && <List items = {arrOfObjFruite} category = "Fruites" />}
+ {arrOfObjVetables.length > 0 && <List items = {arrOfObjVetables} category = "Vegtables"/>}
+ 
  </>
  )
 }
