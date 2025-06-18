@@ -1,0 +1,124 @@
+/* Reset Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  background-color: black;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Page Title */
+h1 {
+  text-align: center;
+  color: white;
+  margin: 50px auto 30px;
+  font-size: 4em;
+}
+
+/* Input Field */
+input[type="text"] {
+  display: block;
+  width: 40%;
+  margin: 0 auto 20px;
+  padding: 15px 20px;
+  font-size: 1.5em;
+  border-radius: 30px;
+  text-align: center;
+  border: none;
+  outline: none;
+}
+
+/* Add Button */
+#btn-add {
+  display: block;
+  margin: 0 auto 40px;
+  padding: 12px 25px;
+  font-size: 1.1em;
+  background-color: green;
+  color: white;
+  border-radius: 30px;
+  border: 2px solid white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#btn-add:hover {
+  background-color: darkgreen;
+}
+
+/* List Style */
+ul {
+  list-style: none;
+  padding: 0 10%;
+}
+
+/* Each Task Container */
+#parent {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 15px 20px;
+  margin-bottom: 15px;
+  border-radius: 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-left: 20%;
+  max-width: 60%;
+}
+
+/* Text + Buttons Together */
+#listItems {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 100px;
+  flex: 1;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #d10000;
+}
+
+/* Delete Button */
+#btn-del {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  font-size: 1em;
+  border-radius: 15px;
+  cursor: pointer;
+  font-weight: bold;
+  min-width: 100px;
+  min-height: 50px;
+}
+
+#btn-del:hover {
+  background-color: darkred;
+}
+
+/* Arrow Buttons */
+.btn-image {
+  background-color: rgba(128, 128, 128, 0.2);
+  padding: 8px;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  min-width: 100px;
+
+}
+
+.btn-image:hover {
+  background-color: rgba(128, 128, 128, 0.5);
+}
+
+.btn-image img {
+  width: 30px;
+  height: 30px;
+
+}
