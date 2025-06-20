@@ -1,7 +1,7 @@
     body{
         background-image: url("../src/assets/clock.png");
         background-repeat:no-repeat;
-        background-position: 50% -45%;
+        background-position: 50% 50%;
     }
     .main-div{
         margin: 20px;
